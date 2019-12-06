@@ -1,0 +1,17 @@
+Esse é um estudo de git
+Nesse arquivo será colocado todo tipo de teclas de atalho do git
+
+git-help
+lista todos os comandos usados
+
+git help e nome do comando que deseja saber
+descrição do comando apos o help
+
+git init primeiroRepo
+inicia/cria um diretório assitido pelo git com o nome nome primeiroRepo
+
+git init
+cria um repositorio no diretorio atual
+
+git add arquivo a ser adicionado
+adiciona um arquivo para ser assitindo pelo git

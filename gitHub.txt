@@ -1,0 +1,10 @@
+Crie um repositório no gitHub
+
+
+Configure o reppsitório remoto
+
+
+Crie um arquivo README.md
+a extensão de arquivo md é uma extensão chamada Mark Down, tanto o gitHub quanto o gitLab usam o README para mostrar informações na pagina inicial
+
+Faça o upload das alterações

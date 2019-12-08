@@ -1,0 +1,64 @@
+Aqui é onde será feito as anotações de conceitos do git
+
+O git apenas assiste os documentos em um dado repositório e salva no seu pc sendo assim um repositório local
+
+Porém podemos configurar o git para sincronizar com o nosso repositório remoto(em nuvem/servidor)
+Para salvar do nosso computador para o github temos dois modos de fazeer isso:
+
+por https:
+	onde você se autêntica, digita usuario e senha do github e manda o repositorio local pra nuvem com as mudanças 
+
+por chave(senha) ssh:
+Não precisa digitar um usuario e senha toda hora
+precisa criar uma chave ssh
+
+ao fazer uma chave ssh acesse a central de help do github:
+https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+siga os passos do help porém não coloque uma senha, pois o intuito de fazer a chave ssh é justamente agilizar, sem necessidade de colocar a senha a todo commit dado
+
+
+Ao criar os arquivos é necessario que o git assista esses documentos criados para isso usamos o comando git init dentro do diretório que deseja assistir
+
+
+Toda vez que criarmos um projeto que será assistido pelo git:
+
+
+Para criar um diretorio com junto ao mesmo tempo que inicializa(faz com que o diretório seja assitido pelo git) o git basta adicionar o nome do diretorio que seseja criar logo após git init meuGit(meu Git sendo o nome do diretorio criado)
+
+
+Ao criar uma pasta assitida pelo git é necessario fazer uso de um comando que adiciona os arquivos dentro desse diretorio para que o git o acompanhe, e para isso é necessario usar o comando git add codigo1( codigo1 sendo o nome do arquivo a ser acompanhado pelo git)
+
+Ao fazer o comando git add é necessario fazer um git commit para que o git realmente altere o documento no repositorio local e ao fazer isso o git irá perguntar quem é voce, voce precida ter essas configurações setadas no seu git (email e nome)**recomendado usar mesmo email e username que tiver no github para isso usaremos os comandos
+git config --global user.name "username"
+username sendo seu usuario do github
+git config --global user.name "email"
+email sendo o email usado no seu gitHub
+
+podendo fazer uso do elemento --global para que todos os repositorios(projetos) sejam setados para mesmo usuario e para o mesmo usuario
+
+
+Ao usar o comando git commit o terminal irá abrir uma opção para que você possa escrever um comentario sobre o que voce esta comitando(que alterações voce fez)
+Para escrever a menssagem de commit O terminal pode abrir em nano(padrão), VI, gedit, sublime, etc...
+
+Ao salvar o arquivo de texto sobre o commit o git irá reconhecer que o commit foi feito
+
+Para poder ver se tudo esta commitado ou se faltam arquivos a serem comitados, basta usar o comando git status
+
+Para poder ver os commites feitos e quem fez e quando fez basta usar o comando git log
+
+ Até agora não fizemos nenhum arquivo se conectar com o nosso servidor remoto que no nosso caso será o gitHub
+
+ para fazer isso precisamos ir até o gitHub e faremos um novo repositório dentro do gitHub, voce irá nomear de preferencia com o mesmo nome da pasta remota (que esta no seu computador) gere o repositorio no gitHub e ele ira gerar um comando git remote add origin nome_da_URL onde remote é uma ação no serivdor remoto(gitHub) add é o comando de adicionar e origin é que sera adicionado na origem e por ultimo o caminho url do repositório
+
+ Ao setar isso podemos ver o remote que temos ao digitar o comando git remote -v e se tudo der certo será listado duas vezes o mesmo caminho sendo que uma terá o comando fetch e a outra o comando push como referencia
+
+ O fetch permite baixar os arquivos do repositório para a sua maquina (do servidor remoto para o local)
+
+ O puch permite enviar os arquivos da sua maquina para o repositório (do local para o servidor remoto)
+
+agora para enviar uma alteração para o servidor remoto basta usar o comando git push
+porem caso seja sua primeira vez enviando uma alteração, o git não irá permitir o envio da alteração e pedirá por uma branch, branch são linhas de desenvolvimentos que temos no repositorio git e por padrão o repositorio sempre tem a branch master e ele o git dará o comando para você configurar essa branch master no repositório de origem, nas proximas vezes não precisara setar a branch novamente pois ja esta setada, então poderá usar o comando git push sem problemas
+
+
+desde o git versão 2.0 ele usa o comando git config --global push.default simple por padrão para enviar arquivos

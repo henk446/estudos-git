@@ -15,3 +15,12 @@ cria um repositorio no diretorio atual
 
 git add arquivo a ser adicionado
 adiciona um arquivo para ser assitindo pelo git
+
+git commit
+Irá gerar a mudança de fato no repositório(local)
+
+git config --global user.name "username"
+seta usuario que estará alterando o arquivo e seta para todos os outros projetos que serão assistidos pelo git com o --global
+
+git config --global user.name "email"
+seta email do usuario que estará alterando o arquivo e seta para todos os outros projetos que serão assistidos pelo git com o --global

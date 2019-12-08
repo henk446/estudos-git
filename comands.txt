@@ -30,3 +30,13 @@ adiciona todos os arquivos de uma só
 
 git commit -m "mensagem sobre o commit e/ou alterações feitas"
 atalho par comitar arquivos sem precisar entrar em um progrma para editar a mensgem de comite
+
+
+git push -u origin master
+Primeira vez enviando arquivos para o repositório
+**O envio é rejeitado se o repositorio local nao estiver sincronizado
+
+git push <remote> <branch>
+
+
+git push

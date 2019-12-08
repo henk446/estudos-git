@@ -61,4 +61,17 @@ agora para enviar uma alteração para o servidor remoto basta usar o comando gi
 porem caso seja sua primeira vez enviando uma alteração, o git não irá permitir o envio da alteração e pedirá por uma branch, branch são linhas de desenvolvimentos que temos no repositorio git e por padrão o repositorio sempre tem a branch master e ele o git dará o comando para você configurar essa branch master no repositório de origem, nas proximas vezes não precisara setar a branch novamente pois ja esta setada, então poderá usar o comando git push sem problemas
 
 
-desde o git versão 2.0 ele usa o comando git config --global push.default simple por padrão para enviar arquivos
+desde o git versão 2.0 ele usa o comando git config --global push.default simple por padrão para enviar arquivos use ele caso o git fale para usa-lo
+
+O git config --global core.editor gedit muda o editor de texto padrão de comentario de commit de nano(padrão) para gedit
+
+git commit [ -m "Messagem a ser passada como descrição de documnetos alterados"]
+usado para dar um commit com todos os arquivos e a parte em conchetes é para que você use a branch master e passe a descrição entre aspas
+
+
+Git workflow:
+	Basicamente a maior parte do trabalho com o git consiste nesteas tarefas:
+
+	-Editar
+	-Commitar
+	-Sincronizar com o repositório remoto

@@ -75,3 +75,15 @@ Git workflow:
 	-Editar
 	-Commitar
 	-Sincronizar com o repositório remoto
+
+
+Estados dos arquivos (git)
+
+	-Não monitorado (untracked)
+		Ao criarmos o arquivo ele fica como não monitorado 
+	-Modificado (modified)
+		Qaundo editamos ele vira um arquivo modificado
+	-Preparado (staged)
+	 	Quando damos git add o arquivo ficará preparado para dar o commit
+	-Consolidado (commited)
+		Ao comitar ele(o arquivo) estará registrado no git

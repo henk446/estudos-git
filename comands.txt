@@ -23,4 +23,10 @@ git config --global user.name "username"
 seta usuario que estará alterando o arquivo e seta para todos os outros projetos que serão assistidos pelo git com o --global
 
 git config --global user.name "email"
-seta email do usuario que estará alterando o arquivo e seta para todos os outros projetos que serão assistidos pelo git com o --global
+seta email do usuario que estará alterando o arquivo e seta para todos os outros projetos que serão assistidos pelo git com o --
+
+git add .
+adiciona todos os arquivos de uma só 
+
+git commit -m "mensagem sobre o commit e/ou alterações feitas"
+atalho par comitar arquivos sem precisar entrar em um progrma para editar a mensgem de comite
